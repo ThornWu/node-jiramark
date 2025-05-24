@@ -1,5 +1,5 @@
 {
-    "name": "jiramark",
+    "name": "@thornfe/jiramark",
     "description": "Parser for the JIRA markup language",
     "version": "0.5.0",
     "author": "Joyent (joyent.com)",
@@ -8,10 +8,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git://github.com/joyent/node-jiramark.git"
+        "url": "git://github.com/ThornWu/node-jiramark.git"
     },
     "bugs": {
-        "url": "https://github.com/joyent/node-jiramark/issues"
+        "url": "https://github.com/ThornWu/node-jiramark/issues"
     },
     "main": "lib/index.js",
     "dependencies": {
