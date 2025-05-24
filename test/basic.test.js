@@ -834,25 +834,25 @@ test('Attachments', function (t) {
 test('Embedding', function (t) {
     // Basic
     t.equals(toHTML('!foo.gif!'),
-        '<p>[Attachment: <tt>foo.gif</tt>]</p>');
+        '<p><img src="foo.gif" /></p>');
     t.equals(toHTML('!example.mov!'),
-        '<p>[Attachment: <tt>example.mov</tt>]</p>');
+        '<p><img src="example.mov" /></p>');
 
     // URL
     t.equals(toHTML('!http://www.host.com/image.gif!'),
-        '<p>[Attachment: <tt>http://www.host.com/image.gif</tt>]</p>');
+        '<p><img src="http://www.host.com/image.gif" /></p>');
 
     // Filenames with spaces
     t.equals(toHTML('!Screenshot-2018-6-6 - PG Stats(1).png|thumbnail!'),
-        '<p>[Attachment: <tt>Screenshot-2018-6-6 - PG Stats(1).png</tt>]</p>');
+        '<p><img src="Screenshot-2018-6-6 - PG Stats(1).png" /></p>');
 
     // Options
     t.equals(toHTML('!foo.gif|thumbnail!'),
-        '<p>[Attachment: <tt>foo.gif</tt>]</p>');
+        '<p><img src="foo.gif" /></p>');
     t.equals(toHTML('!media.wmv|id=media!'),
-        '<p>[Attachment: <tt>media.wmv</tt>]</p>');
+        '<p><img src="media.wmv" /></p>');
     t.equals(toHTML('!foo.gif|align=right, vspace=4!'),
-        '<p>[Attachment: <tt>foo.gif</tt>]</p>');
+        '<p><img src="foo.gif" /></p>');
 
     t.end();
 });
